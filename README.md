@@ -15,7 +15,7 @@ HTTP Client for golang, Inspired by [Javascript-axios](https://github.com/axios/
 go mod:
 
 ```bash
-go get https://github.com/ibnusurkati/basit
+go get github.com/ibnusurkati/basit
 ```
 
 ## Methods
