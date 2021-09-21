@@ -24,6 +24,10 @@ func main() {
 			"public-key": "hello cuy",
 			"User-Agent": "irx",
 		},
+		Query: map[string]string{
+			"public-key": "hello cuy",
+			"User-Agent": "irx",
+		},
 		DataType:     "json",
 		ResponseType: "json",
 	}

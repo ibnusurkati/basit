@@ -14,6 +14,7 @@ type Instance struct {
 	Url          string
 	Method       string
 	ResponseType string
+	Query        map[string]string
 	Headers      map[string]string
 	Data         interface{}
 	DataType     string
@@ -40,6 +41,7 @@ func (i *Instance) InitContext() *context.Context {
 	pluginList := []plugins.Setup{
 		plugins.URL{Data: i.Url},
 		plugins.Method{Data: i.Method},
+		plugins.Query{Data: i.Query},
 		plugins.Header{Data: i.Headers},
 		plugins.Body{Data: i.Data, Type: i.DataType},
 		plugins.TLSConfig{Config: i.TLSConfig},
